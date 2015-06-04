@@ -26,10 +26,51 @@ AngularDemoModule
         };
         return interceptor;
     })
-    .config(['$cookiesProvider', function($cookiesProvider) {
+    .factory('AuthInterceptor', function($rootScope, $q, $cookies, $location, $timeout) {
+        return {
+            request: function(config) {
+                delete $rootScope.errorKey;
 
-    }])
+                config.headers = config.headers || {};
+                if ($cookies.authenticationToken && $cookies.email) {
+                    config.headers['X-AUTH-TOKEN'] = $cookies.authenticationToken;
+                    config.headers['X-AUTH-EMAIL'] = $cookies.email;
+                }
+                return config;
+            },
+            responseError: function(response) {
+                var status = response.status;
+
+                // user is not authenticated -> redirect
+                if (status === 401) {
+                    $rootScope.errorKey = 'global.errors.unauthorized';
+                    $timeout(function() {
+                        $location.path('/');
+                    }, 3000);
+
+                    // ignore form validation errors because there are handled in the specific controller
+                } else if (status !== 0 && angular.isUndefined(response.data.errors)) {
+
+                    // server error
+                    if (response.data.text) {
+                        $rootScope.errorKey = response.data.text;
+                    } else {
+                        $rootScope.showErrorMsg = true; // general error message
+                        $timeout(function() {
+                            $rootScope.showErrorMsg = false;
+                        }, 5000);
+                    }
+                }
+
+                return $q.reject(response);
+            }
+        };
+    })
+    // .config(['$cookiesProvider', function($cookiesProvider) {
+    //     // $http.defaults.headers.common["X-AUTH-TOKEN"] = $cookies['AUTH-TOKEN'];
+    // }])
     .config(['$httpProvider', function($httpProvider) {
+        $httpProvider.interceptors.push('AuthInterceptor');
         $httpProvider.interceptors.push('HttpInterceptor');
     }])
     .config(['$routeProvider', function($routeProvider) {
