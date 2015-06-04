@@ -26,6 +26,9 @@ AngularDemoModule
         };
         return interceptor;
     })
+    .config(['$cookiesProvider', function($cookiesProvider) {
+
+    }])
     .config(['$httpProvider', function($httpProvider) {
         $httpProvider.interceptors.push('HttpInterceptor');
     }])
