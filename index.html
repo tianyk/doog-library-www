@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="doog.library-www">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular-Demo</title>
+    <link rel='stylesheet' href='/node_modules/nprogress/nprogress.css' />
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="content">
+        <div class="tab">
+            <ul>
+                <li><a ng-href="#/home">Home</a></li>
+                <li><a ng-href="#/login">Login</a></li>
+                <li><a ng-href="#/help">Help</a></li>
+                <li><a href="#/not-found">NotFound</a></li>
+            </ul>
+        </div>
+        <div ng-view></div>
+    </div>
+    <footer>
+        <h5>Footer</h5>
+    </footer>
+    <script src='/node_modules/nprogress/nprogress.js'></script>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/angular-resource/angular-resource.min.js"></script>
+    <script src="/app.js"></script>
+    <!-- Angular Controller -->
+    <script src="/app/controller/home.js"></script>
+    <script src="/app/controller/login.js"></script>
+    <script src="/app/controller/help.js"></script>
+    <script src="/app/controller/not_found.js"></script>
+    <!-- Angular Service -->
+    <script src="/app/service/auth.js"></script>
+    <script src="/app/service/book.js"></script>
+</body>
+
+</html>

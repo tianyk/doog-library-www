@@ -1,0 +1,19 @@
+<div>
+    <h1>{{title}}</h1>
+    <button ng-click="say()">wangwang~</button>
+    <button ng-click="load()">load</button>
+    <div class="section express-books">
+        <div ng-repeat="(key, book) in expressBooks">
+            <img ng-src="{{book.image}}" alt="{{book.title}}">
+            <span>{{book.title}}</span>
+            <span>{{book.author}}</span>
+        </div>
+    </div>
+    <div class="section popular-books">
+        <div ng-repeat="(key, book) in popularBooks">
+            <img ng-src="{{book.image}}" alt="{{book.title}}">
+            <span>{{book.title}}</span>
+            <span>{{book.author}}</span>
+        </div>
+    </div>
+</div>

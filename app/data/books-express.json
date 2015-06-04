@@ -1,0 +1,849 @@
+[{
+    "rating": {
+        "max": 10,
+        "numRaters": 10,
+        "average": "7.9",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2001-04",
+    "tags": [{
+        "count": 25,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 10,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 7,
+        "name": "童年",
+        "title": "童年"
+    }, {
+        "count": 6,
+        "name": "小樱桃",
+        "title": "小樱桃"
+    }, {
+        "count": 5,
+        "name": "杨尚君",
+        "title": "杨尚君"
+    }, {
+        "count": 5,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }, {
+        "count": 4,
+        "name": "原创",
+        "title": "原创"
+    }, {
+        "count": 2,
+        "name": "非常好",
+        "title": "非常好"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s6094808.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "142",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s6094808.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s6094808.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s6094808.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1072930\/",
+    "id": "1072930",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533914759",
+    "isbn13": "9787533914752",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1072930",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《小樱桃漫画(蓝星号)》是孩子就爱看漫画，可以说，漫画伴着孩子长大的，在孩子天真无邪的天空下，故事动人，图画可爱，阳光出灿烂，而且，孩子从小学到的语言能力，想像能力，思维能力，甚至辨别能力都会使他们永远难忘。小樱桃太可爱，太幽默了，绝对可以与日本的蜡笔小新一比高低！",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 7,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["\n      "],
+    "pubdate": "2001-04",
+    "tags": [{
+        "count": 2,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 1,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年",
+        "title": "童年"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s9147551.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "142",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s9147551.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s9147551.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s9147551.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1025473\/",
+    "id": "1025473",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533914740",
+    "isbn13": "9787533914745",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1025473",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "\n      ",
+    "price": "6.00"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 5,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "木星号",
+    "author": [],
+    "pubdate": "2002-4",
+    "tags": [{
+        "count": 1,
+        "name": "小学",
+        "title": "小学"
+    }, {
+        "count": 1,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 1,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9764818.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "",
+    "pages": "139",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9764818.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9764818.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9764818.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2259033\/",
+    "id": "2259033",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533915941",
+    "isbn13": "9787533915940",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2259033",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 4,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["\n      "],
+    "pubdate": "2001-04",
+    "tags": [{
+        "count": 2,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 2,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年",
+        "title": "童年"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s6092141.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "142",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s6092141.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s6092141.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s6092141.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1064763\/",
+    "id": "1064763",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533914724",
+    "isbn13": "9787533914721",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1064763",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《小樱桃漫画(橙星号)》向大家展示了小樱桃的故事，让我们可以在轻松愉快中走近小樱桃。集集精彩，页页爆笑。",
+    "price": "6.00"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 3,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2001-04",
+    "tags": [{
+        "count": 2,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 2,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年",
+        "title": "童年"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s6510884.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "137",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s6510884.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s6510884.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s6510884.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1029251\/",
+    "id": "1029251",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533913914",
+    "isbn13": "9787533913915",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1029251",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "小樱桃漫画(黄星号)内容简介：是孩子就爱看漫画，可以说，漫画伴着孩子长大的，在孩子天真无邪的天空下，故事动人，图画可爱，阳光出灿烂，而且，孩子从小学到的语言能力，想像能力，思维能力，甚至辨别能力都会使他们永远难忘。小樱桃太可爱，太幽默了，绝对可以与日本的蜡笔小新一比高低！",
+    "price": "6.00"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 4,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2002-4",
+    "tags": [{
+        "count": 2,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 1,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s4084170.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "",
+    "pages": "139",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s4084170.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s4084170.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s4084170.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2259029\/",
+    "id": "2259029",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533915844",
+    "isbn13": "9787533915841",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2259029",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "本书以小樱桃为主线，用漫画的形式描写了当代小学生学习、生活的情况。",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 3,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": [],
+    "pubdate": "2002-4",
+    "tags": [{
+        "count": 1,
+        "name": "小学",
+        "title": "小学"
+    }, {
+        "count": 1,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 1,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9764809.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "",
+    "pages": "139",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9764809.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9764809.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9764809.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2259031\/",
+    "id": "2259031",
+    "publisher": "",
+    "isbn10": "7533915968",
+    "isbn13": "9787533915964",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2259031",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 3,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2001-04",
+    "tags": [{
+        "count": 2,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 2,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 2,
+        "name": "童年",
+        "title": "童年"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s6092139.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "139",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s6092139.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s6092139.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s6092139.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1012831\/",
+    "id": "1012831",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533913922",
+    "isbn13": "9787533913922",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1012831",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《小樱桃漫画(赤星号)》是由浙江文艺出版社出版发行的，《小樱桃漫画(赤星号)》内容简介：千万不要学我上课时犯困。课堂上勿见周公，乱流口水。不要以为课堂上乱画，长大后会成为漫画家。我是最喜欢交朋友的，希望你千万和我联系哦。",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 2,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": [],
+    "pubdate": "2002-4",
+    "tags": [{
+        "count": 1,
+        "name": "小学",
+        "title": "小学"
+    }, {
+        "count": 1,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9764808.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "",
+    "pages": "139",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9764808.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9764808.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9764808.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2258630\/",
+    "id": "2258630",
+    "publisher": "",
+    "isbn10": "753391595X",
+    "isbn13": "9787533915957",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2258630",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 2,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": [],
+    "pubdate": "2002-4",
+    "tags": [{
+        "count": 1,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 1,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年",
+        "title": "童年"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9764807.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "",
+    "pages": "139",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9764807.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9764807.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9764807.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2303430\/",
+    "id": "2303430",
+    "publisher": "",
+    "isbn10": "7533915976",
+    "isbn13": "9787533915971",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2303430",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 3,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "紫星号",
+    "author": ["\n      "],
+    "pubdate": "2001-04",
+    "tags": [{
+        "count": 2,
+        "name": "小樱桃漫画",
+        "title": "小樱桃漫画"
+    }, {
+        "count": 2,
+        "name": "漫画",
+        "title": "漫画"
+    }, {
+        "count": 1,
+        "name": "童年",
+        "title": "童年"
+    }, {
+        "count": 1,
+        "name": "童年回忆",
+        "title": "童年回忆"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s9148215.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s9148215.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s9148215.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s9148215.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1069233\/",
+    "id": "1069233",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533913930",
+    "isbn13": "9787533913939",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1069233",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "\n      ",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君编"],
+    "pubdate": "2004-1",
+    "tags": [{
+        "count": 1,
+        "name": "我想读",
+        "title": "我想读"
+    }, {
+        "count": 1,
+        "name": "钱堆里的男孩",
+        "title": "钱堆里的男孩"
+    }],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s9084370.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "爱情闹剧1 小樱桃来了2 找朋友3 换换口味吧",
+    "pages": "122",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s9084370.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s9084370.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s9084370.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1151608\/",
+    "id": "1151608",
+    "publisher": "浙江文艺",
+    "isbn10": "7533919017",
+    "isbn13": "9787533919016",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1151608",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《小樱桃漫画:水蜜桃版》内容简介：小樱桃是由中国漫画家塑造的国际动漫明星。她的故事最初在国内外知名报刊连载，后来被制作成FLASH动画片在互联网上广为播放，被海内外网友热情追捧。她大胆搞笑、机智幽默，令人捧腹，图书总发行量创下中国大陆原创漫画之最，被漫画迷们誉为“中国第一幽默女生”。",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2004-1",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9864606.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "一 原始部落二 校园卡拉OK三 换换口味吧",
+    "pages": "122",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9864606.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9864606.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9864606.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1151491\/",
+    "id": "1151491",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533919041",
+    "isbn13": "9787533919047",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1151491",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["小樱桃卡通公司"],
+    "pubdate": "2004-1-1",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s9081651.jpg",
+    "binding": "平装(无盘)",
+    "translator": [],
+    "catalog": "一 梦幻教师节\n二 爱国小战士\n三 换换口味吧",
+    "pages": "122",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s9081651.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s9081651.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s9081651.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1151592\/",
+    "id": "1151592",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533919009",
+    "isbn13": "9787533919009",
+    "title": "小樱桃漫画(新鲜橙版)",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1151592",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《新鲜橙版:小樱桃漫画·果味系列》内容简介：小樱桃是由中国漫画家塑造的国际动漫明星。她的故事最初在国内外知名报刊连载，后来被制作成FLASH动画片在互联网上广为播放，被海内外网友热情追捧。她大胆搞笑、机智幽默，令人捧腹，图书总发行量创下中国大陆原创漫画之最，被漫画迷们誉为“中国第一幽默女生”。",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2004-1",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s9864742.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "一 暗渡陈仓二 野炊记三 换换口味吧",
+    "pages": "122",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s9864742.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s9864742.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s9864742.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1151607\/",
+    "id": "1151607",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533918975",
+    "isbn13": "9787533918972",
+    "title": "小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1151607",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2004-1",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9081648.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "一 大考临头二 “好”事闹翻天三 换换口味吧",
+    "pages": "122",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9081648.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9081648.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9081648.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1330733\/",
+    "id": "1330733",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533919025",
+    "isbn13": "9787533919023",
+    "title": "小樱桃漫画(大西瓜版)",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1330733",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《大西瓜版:小樱桃漫画》内容简介:小樱桃是由中国漫画家塑造的国际动漫明星。她的故事最初在国内外知名报刊连载，后来被制作成FLASH动画片在互联网上广为播放，被海内外网友热情追捧。她大胆搞笑、机智幽默，令人捧腹，图书总发行量创下中国大陆原创漫画之最，被漫画迷们誉为“中国第一幽默女生”。\n如果您想了解小樱桃更多资讯，请登录小樱桃动漫网www.xoyto.com。",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": [],
+    "pubdate": "",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img3.douban.com\/mpic\/s25037735.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "",
+    "pages": "",
+    "images": {
+        "small": "http:\/\/img3.douban.com\/spic\/s25037735.jpg",
+        "large": "http:\/\/img3.douban.com\/lpic\/s25037735.jpg",
+        "medium": "http:\/\/img3.douban.com\/mpic\/s25037735.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2303198\/",
+    "id": "2303198",
+    "publisher": "",
+    "isbn10": "7532450414",
+    "isbn13": "9787532450411",
+    "title": "快乐精灵小樱桃(11)\/\/小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2303198",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2004-1",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s9864726.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "一 狂侠时代二 考试惊魂三 换换口味吧",
+    "pages": "122",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s9864726.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s9864726.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s9864726.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1151593\/",
+    "id": "1151593",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533919033",
+    "isbn13": "9787533919030",
+    "title": "小樱桃漫画(黄香蕉版)",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1151593",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "黄香蕉版，ISBN：9787533919030，作者：杨尚君 编绘",
+    "price": "6.00元"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 1,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": ["杨尚君"],
+    "pubdate": "2001-04",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s25013106.jpg",
+    "binding": "平装",
+    "translator": [],
+    "catalog": "\n      ",
+    "pages": "142 页",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s25013106.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s25013106.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s25013106.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/1025532\/",
+    "id": "1025532",
+    "publisher": "浙江文艺出版社",
+    "isbn10": "7533914732",
+    "isbn13": "9787533914738",
+    "title": "小樱桃漫画 绿星号",
+    "url": "http:\/\/api.douban.com\/v2\/book\/1025532",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "《小樱桃漫画(绿星号)》：建国以来影响最大的大陆原创系列幽默漫画，国内外300余家媒体超强连载，全球每天有两千多万读者与小樱桃爆笑面对面。",
+    "price": "6.00"
+}, {
+    "rating": {
+        "max": 10,
+        "numRaters": 0,
+        "average": "0.0",
+        "min": 0
+    },
+    "subtitle": "",
+    "author": [],
+    "pubdate": "",
+    "tags": [],
+    "origin_title": "",
+    "image": "http:\/\/img4.douban.com\/mpic\/s25037737.jpg",
+    "binding": "",
+    "translator": [],
+    "catalog": "",
+    "pages": "",
+    "images": {
+        "small": "http:\/\/img4.douban.com\/spic\/s25037737.jpg",
+        "large": "http:\/\/img4.douban.com\/lpic\/s25037737.jpg",
+        "medium": "http:\/\/img4.douban.com\/mpic\/s25037737.jpg"
+    },
+    "alt": "http:\/\/book.douban.com\/subject\/2259030\/",
+    "id": "2259030",
+    "publisher": "",
+    "isbn10": "7532450430",
+    "isbn13": "9787532450435",
+    "title": "快乐精灵小樱桃(13)\/\/小樱桃漫画",
+    "url": "http:\/\/api.douban.com\/v2\/book\/2259030",
+    "alt_title": "",
+    "author_intro": "",
+    "summary": "",
+    "price": "6.00"
+}]
