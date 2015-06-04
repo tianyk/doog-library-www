@@ -1,5 +1,5 @@
 ;
-var AngularDemoModule = angular.module('doog.library-www', ['ngRoute', 'ngResource']);
+var AngularDemoModule = angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies']);
 AngularDemoModule
     .factory('HttpInterceptor', function($q) {
         var interceptor = {
