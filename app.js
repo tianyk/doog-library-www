@@ -70,7 +70,7 @@ AngularDemoModule
     //     // $http.defaults.headers.common["X-AUTH-TOKEN"] = $cookies['AUTH-TOKEN'];
     // }])
     .config(['$httpProvider', function($httpProvider) {
-        $httpProvider.interceptors.push('AuthInterceptor');
+        // $httpProvider.interceptors.push('AuthInterceptor');
         $httpProvider.interceptors.push('HttpInterceptor');
     }])
     .config(['$routeProvider', function($routeProvider) {
@@ -90,25 +90,25 @@ AngularDemoModule
             redirectTo: '/'
         });
     }])
-    .config(['$httpProvider', '$cacheFactory', function($httpProvider, $cacheFactory) {
-        $httpProvider.defaults.cache = $cacheFactory('lru', {
-            capacity: 100
-        });
-    }])
-    .run(function($rootScope, $location, $log, AuthService) {
+    // .config(['$httpProvider', '$cacheFactory', function($httpProvider, $cacheFactory) {
+    //     $httpProvider.defaults.cache = $cacheFactory('lru', {
+    //         capacity: 100
+    //     });
+    // }])
+    .run(['$rootScope', '$location', '$log', '$interval', 'AuthService', function($rootScope, $location, $log, $interval, AuthService) {
         var NProgressTimer;
         $rootScope.$on('page:fetch', function() {
             NProgress.remove();
             NProgress.start();
 
-            clearInterval(NProgressTimer);
-            NProgressTimer = setInterval(function() {
+            $interval.cancel(NProgressTimer);
+            NProgressTimer = $interval(function() {
                 NProgress.inc();
             }, 500);
         });
 
         $rootScope.$on('page:change', function() {
-            clearInterval(NProgressTimer);
+            $interval.cancel(NProgressTimer);
             NProgress.done();
         });
 
@@ -143,4 +143,4 @@ AngularDemoModule
             $rootScope.$broadcast('doge.say', 'GO');
             $rootScope.$emit('root:say');
         });
-    });
+    }]);
