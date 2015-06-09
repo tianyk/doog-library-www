@@ -1,5 +1,8 @@
 ;
-angular.module('doog.library-www').controller('LoginController', ['$scope', '$log', function($scope, $log) {
+angular.module('doog.library-www').controller('LoginController', ['$scope', '$location', '$log', function($scope, $location, $log) {
+    $log.info('location.url: ' + $location.url());
+    $log.info('location.path: ' + $location.path());
+    $log.info('location.absUrl: ' + $location.absUrl());
     $scope.title = 'Login';
 
     $scope.$on('doog.say', function() {

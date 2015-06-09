@@ -1,6 +1,5 @@
 ;
-var AngularDemoModule = angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies']);
-AngularDemoModule
+angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
     .factory('HttpInterceptor', function($q) {
         var interceptor = {
             'request': function(config) {
@@ -18,6 +17,7 @@ AngularDemoModule
                 // return $q.reject(rejection);
             },
             'responseError': function(rejection) {
+                console.log(rejection);
                 // 请求发生了错误，如果能从错误中恢复，可以返回一个新的响应或promise
                 return rejection; // 或新的promise
                 // 或者，可以通过返回一个rejection来阻止下一步
@@ -66,6 +66,40 @@ AngularDemoModule
             }
         };
     })
+    .factory('authService', function($http) {
+        var userRole = []; // obtained from backend
+        var userRoleRouteMap = {
+            'ROLE_ADMIN': ['/dashboard', '/about-us', '/authError'],
+            'ROLE_USER': ['/usersettings', '/usersettings/personal', '/authError']
+        };
+
+        return {
+            userLoggedIn: function() {
+                return true;
+            },
+            userHasRole: function(role) {
+                for (var j = 0; j < userRole.length; j++) {
+                    if (role == userRole[j]) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+            isUrlAccessibleForUser: function(route) {
+                for (var i = 0; i < userRole.length; i++) {
+                    var role = userRole[i];
+                    var validUrlsForRole = userRoleRouteMap[role];
+                    if (validUrlsForRole) {
+                        for (var j = 0; j < validUrlsForRole.length; j++) {
+                            if (validUrlsForRole[j] == route)
+                                return true;
+                        }
+                    }
+                }
+                return false;
+            }
+        };
+    })
     // .config(['$cookiesProvider', function($cookiesProvider) {
     //     // $http.defaults.headers.common["X-AUTH-TOKEN"] = $cookies['AUTH-TOKEN'];
     // }])
@@ -73,7 +107,9 @@ AngularDemoModule
         // $httpProvider.interceptors.push('AuthInterceptor');
         $httpProvider.interceptors.push('HttpInterceptor');
     }])
-    .config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+        // html5路由模式
+        // $locationProvider.html5Mode(true).hashPrefix('!');
         $routeProvider.when('/', {
             templateUrl: '/app/views/home.html',
             controller: 'HomeController'
@@ -89,6 +125,7 @@ AngularDemoModule
         }).otherwise({
             redirectTo: '/'
         });
+
     }])
     // .config(['$httpProvider', '$cacheFactory', function($httpProvider, $cacheFactory) {
     //     $httpProvider.defaults.cache = $cacheFactory('lru', {
@@ -116,6 +153,9 @@ AngularDemoModule
         $rootScope.$on('$routeChangeStart', function(evt, next, current) {
             $rootScope.$emit('page:fetch');
 
+            // if (!authService.isUrlAccessibleForUser(next.originalPath))
+            //     $location.path('/authError');
+
             $log.info('$routeChangeStart');
             // 如果用户未登录
             if (!AuthService.userLoggedIn()) {
@@ -129,7 +169,13 @@ AngularDemoModule
 
         $rootScope.$on('$routeChangeSuccess', function(evt, next, previous) {
             $rootScope.$emit('page:change');
+
+            // $scope = next.scope;
+            // if ($scope) {
+            //     $scope.absUrl =
+            // }
             $log.info('$routeChangeSuccess');
+            $log.info(next);
         });
 
         $rootScope.$on('$routeChangeError', function(current, previous, rejection, error) {

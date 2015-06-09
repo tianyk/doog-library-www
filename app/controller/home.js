@@ -1,5 +1,8 @@
 ;
-angular.module('doog.library-www').controller('HomeController', ['$scope', '$log', 'BookService', function($scope, $log, BookService) {
+angular.module('doog.library-www').controller('HomeController', ['$scope', '$location', '$log', 'BookService', function($scope, $location, $log, BookService) {
+    $log.info('location.url: ' + $location.url());
+    $log.info('location.path: ' + $location.path());
+    $log.info('location.absUrl: ' + $location.absUrl());
     $scope.title = 'Home';
     $scope.expressBooks = [];
     $scope.popularBooks = [];
@@ -16,7 +19,7 @@ angular.module('doog.library-www').controller('HomeController', ['$scope', '$log
 
 
     $scope.load = function() {
-        BookService.express(function (bookList) {
+        BookService.express(function(bookList) {
             $log.info(bookList.length);
         });
     }
