@@ -1,8 +1,9 @@
 ;
 angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
-    .factory('HttpInterceptor', function($q) {
+    .factory('HttpInterceptor', ['$q', '$location', '$log', function($q, $location, $log) {
         var interceptor = {
             'request': function(config) {
+                config.headers["location"] = $location.absUrl();
                 // 成功的请求方法
                 return config; // 或者 $q.when(config);
             },
@@ -17,7 +18,6 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
                 // return $q.reject(rejection);
             },
             'responseError': function(rejection) {
-                console.log(rejection);
                 // 请求发生了错误，如果能从错误中恢复，可以返回一个新的响应或promise
                 return rejection; // 或新的promise
                 // 或者，可以通过返回一个rejection来阻止下一步
@@ -25,12 +25,12 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
             }
         };
         return interceptor;
-    })
-    .factory('AuthInterceptor', function($rootScope, $q, $cookies, $location, $timeout) {
+    }])
+    .factory('AuthInterceptor', ['$rootScope', '$q', '$cookies', '$location', '$window', '$timeout', '$log', function($rootScope, $q, $cookies, $location, $window, $timeout, $log) {
         return {
             request: function(config) {
                 delete $rootScope.errorKey;
-
+                config.headers["location"] = $location.absUrl();
                 config.headers = config.headers || {};
                 if ($cookies.authenticationToken && $cookies.email) {
                     config.headers['X-AUTH-TOKEN'] = $cookies.authenticationToken;
@@ -43,11 +43,10 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
 
                 // user is not authenticated -> redirect
                 if (status === 401) {
-                    $rootScope.errorKey = 'global.errors.unauthorized';
-                    $timeout(function() {
-                        $location.path('/');
-                    }, 3000);
+                    var location = response.headers('location');
 
+                    if (location) location = encodeURI(location); // warn: encodeURI(null) === 'null'
+                    $window.location.href = 'http://localhost/login.html' + (!!location ? location : '')
                     // ignore form validation errors because there are handled in the specific controller
                 } else if (status !== 0 && angular.isUndefined(response.data.errors)) {
 
@@ -65,8 +64,8 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
                 return $q.reject(response);
             }
         };
-    })
-    .factory('authService', function($http) {
+    }])
+    .factory('authService', ['$http', function($http) {
         var userRole = []; // obtained from backend
         var userRoleRouteMap = {
             'ROLE_ADMIN': ['/dashboard', '/about-us', '/authError'],
@@ -99,13 +98,14 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
                 return false;
             }
         };
-    })
+    }])
     // .config(['$cookiesProvider', function($cookiesProvider) {
     //     // $http.defaults.headers.common["X-AUTH-TOKEN"] = $cookies['AUTH-TOKEN'];
     // }])
     .config(['$httpProvider', function($httpProvider) {
-        // $httpProvider.interceptors.push('AuthInterceptor');
-        $httpProvider.interceptors.push('HttpInterceptor');
+        $httpProvider.defaults.headers.common['x-Requested-With'] = 'XMLHttpRequest';
+        // $httpProvider.interceptors.push('HttpInterceptor');
+        $httpProvider.interceptors.push('AuthInterceptor');
     }])
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         // html5路由模式
@@ -169,13 +169,7 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
 
         $rootScope.$on('$routeChangeSuccess', function(evt, next, previous) {
             $rootScope.$emit('page:change');
-
-            // $scope = next.scope;
-            // if ($scope) {
-            //     $scope.absUrl =
-            // }
             $log.info('$routeChangeSuccess');
-            $log.info(next);
         });
 
         $rootScope.$on('$routeChangeError', function(current, previous, rejection, error) {

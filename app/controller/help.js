@@ -1,5 +1,5 @@
 ;
-angular.module('doog.library-www').controller('HelpController', ['$scope', '$log', '$location', function($scope, $log, $location) {
+angular.module('doog.library-www').controller('HelpController', ['$scope', '$log', '$location', 'BookService', function($scope, $log, $location, BookService) {
     $scope.title = 'Help';
 
     $scope.$on('doog.say', function() {
@@ -14,7 +14,16 @@ angular.module('doog.library-www').controller('HelpController', ['$scope', '$log
         $log.info(evt.name + ' ' + data);
     });
 
-    $scope.next = function () {
-        $location.search({start: new Date().getTime(), size: 10});
+    $scope.next = function() {
+        $location.search({
+            start: new Date().getTime(),
+            size: 10
+        });
+    }
+
+    $scope.load = function() {
+        BookService.express(function(bookList) {
+            $log.info(bookList.length);
+        });
     }
 }]);
