@@ -15,6 +15,7 @@
         <button id="btn-login" type="button">登录</button>
     </form>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/jquery.cookie/jquery.cookie.js"></script>
     <script type="text/javascript">
     // https://developer.mozilla.org/zh-CN/docs/Web/API/Window/location
     function loadPageVar(sVar) {
@@ -38,8 +39,16 @@
                     email: $('#ipt-name').val(),
                     password: $('#ipt-password').val()
                 })
-                .success(function() {
-                    console.log(arguments);
+                .success(function(data) {
+                    if (data['token']) {
+                        console.log(data['token'])
+
+                        $.cookie('X-AUTH-TOKEN', data['token'], {
+                            expires: 7,
+                            path: '/',
+                            domain: 'tykhome.com'
+                        });
+                    }
                 })
                 .error(function() {
                     console.log(arguments);
