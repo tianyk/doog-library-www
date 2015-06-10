@@ -12,8 +12,18 @@
         <br>
         <input type="text" name="password">
         <br>
-        <button type="button">登录</button>
+        <button id="btn-login" type="button">登录</button>
     </form>
+    <script type="text/javascript">
+    // https://developer.mozilla.org/zh-CN/docs/Web/API/Window/location
+    function loadPageVar(sVar) {
+        return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+    }
+    document.getElementById('btn-login').onclick = function() {
+        var redirectURL = loadPageVar('redirectURL');
+        window.location.href = !!redirectURL ? redirectURL : 'http://localhost/#/help'
+    }
+    </script>
 </body>
 
 </html>

@@ -45,8 +45,9 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
                 if (status === 401) {
                     var location = response.headers('location');
 
-                    if (location) location = encodeURI(location); // warn: encodeURI(null) === 'null'
-                    $window.location.href = 'http://localhost/login.html' + (!!location ? location : '')
+                    // if (location) location = encodeURI(location); // warn: encodeURI(null) === 'null'
+                    if (location) location = encodeURIComponent(location); // warn: encodeURI(null) === 'null'
+                    $window.location.href = 'http://localhost/login.html' + (!!location ? '?redirectURL=' + location : '')
                     // ignore form validation errors because there are handled in the specific controller
                 } else if (status !== 0 && angular.isUndefined(response.data.errors)) {
 
