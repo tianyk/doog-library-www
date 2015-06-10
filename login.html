@@ -7,22 +7,48 @@
 </head>
 
 <body>
-    <form action="">
-        <input type="text" name="email">
+    <form action="http://localhost:3000/login" method="POST">
+        <input id="ipt-name" type="text" name="email">
         <br>
-        <input type="text" name="password">
+        <input id="ipt-password" type="text" name="password">
         <br>
         <button id="btn-login" type="button">登录</button>
     </form>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript">
     // https://developer.mozilla.org/zh-CN/docs/Web/API/Window/location
     function loadPageVar(sVar) {
         return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
     }
-    document.getElementById('btn-login').onclick = function() {
-        var redirectURL = loadPageVar('redirectURL');
-        window.location.href = !!redirectURL ? redirectURL : 'http://localhost/#/help'
-    }
+
+    // document.getElementById('btn-login').onclick = function() {
+    //     var redirectURL = loadPageVar('redirectURL');
+    //     window.location.href = !!redirectURL ? redirectURL : 'http://localhost/#/help'
+    // }
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $.ajaxSetup({
+            headers: {
+                "X-Requested-With": "XMLHttpRequest"
+            }
+        });
+        $('#btn-login').on('click', function() {
+            $.post('http://localhost:3000/login', {
+                    email: $('#ipt-name').val(),
+                    password: $('#ipt-password').val()
+                })
+                .success(function() {
+                    console.log(arguments);
+                })
+                .error(function() {
+                    console.log(arguments);
+                });
+
+            // var redirectURL = loadPageVar('redirectURL');
+            // window.location.href = !!redirectURL ? redirectURL : 'http://localhost/#/help';
+        });
+    })
     </script>
 </body>
 
