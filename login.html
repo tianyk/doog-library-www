@@ -41,8 +41,6 @@
                 })
                 .success(function(data) {
                     if (data['token']) {
-                        console.log(data['token'])
-
                         $.cookie('X-AUTH-TOKEN', data['token'], {
                             expires: 7,
                             path: '/',
