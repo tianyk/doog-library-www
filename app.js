@@ -1,5 +1,6 @@
 ;
 angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
+    .constant('LOGIN_URL', 'http://accounts.tykhome.com:3000/login/')
     .factory('HttpInterceptor', ['$q', '$location', '$log', function($q, $location, $log) {
         var interceptor = {
             'request': function(config) {
@@ -26,7 +27,7 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
         };
         return interceptor;
     }])
-    .factory('AuthInterceptor', ['$rootScope', '$q', '$cookies', '$location', '$window', '$timeout', '$log', function($rootScope, $q, $cookies, $location, $window, $timeout, $log) {
+    .factory('AuthInterceptor', ['$rootScope', '$q', '$cookies', '$location', '$window', '$timeout', '$log', 'LOGIN_URL', function($rootScope, $q, $cookies, $location, $window, $timeout, $log, LOGIN_URL) {
         return {
             request: function(config) {
                 // delete $rootScope.errorKey;
@@ -48,8 +49,8 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
 
                     // if (location) location = encodeURI(location); // warn: encodeURI(null) === 'null'
                     if (location) location = encodeURIComponent(location); // warn: encodeURI(null) === 'null'
-                    $window.location.href = 'http://login.tykhome.com/login.html' + (!!location ? '?redirectURL=' + location : '')
-                    // ignore form validation errors because there are handled in the specific controller
+                    $window.location.href = LOGIN_URL + (!!location ? '?redirectURL=' + location : '')
+                        // ignore form validation errors because there are handled in the specific controller
                 } else if (status !== 0 && angular.isUndefined(response.data.errors)) {
 
                     // server error
