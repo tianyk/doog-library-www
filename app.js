@@ -1,5 +1,5 @@
 ;
-angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
+angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies', 'angular-cache'])
     .constant('LOGIN_URL', 'http://accounts.tykhome.com:3000/login/')
     .factory('HttpInterceptor', ['$q', '$location', '$log', function($q, $location, $log) {
         var interceptor = {
@@ -102,11 +102,20 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
             }
         };
     }])
+    // .config(function(CacheFactoryProvider, $window) {
+    //     angular.extend(CacheFactoryProvider.defaults, {
+    //         maxAge: 15 * 60 * 1000,
+    //         deleteOnExpire: 'passive',
+    //         storageMode: 'localStorage',
+    //         storageImpl: $window.localStorage
+    //     });
+    // })
     // .config(['$cookiesProvider', function($cookiesProvider) {
     //     // $http.defaults.headers.common["X-AUTH-TOKEN"] = $cookies['AUTH-TOKEN'];
     // }])
     .config(['$httpProvider', function($httpProvider) {
         $httpProvider.defaults.headers.common['x-Requested-With'] = 'XMLHttpRequest';
+        $httpProvider.defaults.headers.common['X-Requested-By'] = 'AngularApp';
         // $httpProvider.interceptors.push('HttpInterceptor');
         $httpProvider.interceptors.push('AuthInterceptor');
     }])
@@ -122,11 +131,11 @@ angular.module('doog.library-www', ['ngRoute', 'ngResource', 'ngCookies'])
         }).when('/help', {
             templateUrl: '/app/views/help.html',
             controller: 'HelpController'
-        }).when('/not-found', {
-            templateUrl: '/app/views/not_found.html',
+        }).when('/404', {
+            templateUrl: '/app/views/404.html',
             controller: 'NotFoundController'
         }).otherwise({
-            redirectTo: '/'
+            redirectTo: '/404'
         });
 
     }])

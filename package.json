@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.4.0",
+    "angular-cache": "^4.2.0",
     "angular-cookies": "^1.4.0",
     "angular-loading-bar": "^0.7.1",
     "angular-resource": "^1.4.0",
